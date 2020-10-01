@@ -93,7 +93,11 @@ client.on("message", (message) => {
         message.channel.send("Invalid Args");
       }
       break;
-    case ("Im", "im", "i'm", "I'M"):
+    case "Im":
+    case "im":
+    case "i'm":
+    case "I'M":
+    case "I'm":
       message.channel.send("Hi " + args[1] + ", I'm Dad!");
       break;
     case "joke":
