@@ -105,6 +105,9 @@ client.on("message", (message) => {
     default:
       //message.channel.send("Invalid Args");
       break;
+    case "die":
+      message.channel.send("bleh");
+      break;
   }
 });
 
